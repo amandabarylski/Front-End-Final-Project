@@ -1,0 +1,149 @@
+{
+    "recipes": [
+        {
+            "id": "1",
+            "image": "https://www.zeldadungeon.net/wiki/images/4/42/Meat-and-mushroom-skewer.png",
+            "name": "Mighty Meat and Mushroom Skewer",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4e/BotW_Mighty_Icon.png/revision/latest/scale-to-width-down/40?cb=20170315221605&format=original",
+            "ingredient1": "Raw Meat",
+            "ingredient2": "Razorshroom",
+            "description": "Provides an attack buff. A filling dish made by grilling various mountain ingredients with meat.",
+            "optional": "1-3 additional pieces of meat/Razorshrooms. Can replace initial Raw Meat with Prime or Gourmet Meat.",
+            "notes": "More Razorshrooms will raise the effectiveness of the attack buff. Higher quality meat will increase amount of hearts restored."
+        },
+        {
+            "id": "2",
+            "image": "https://www.zeldadungeon.net/wiki/images/f/f2/Seafood-rice-balls.png",
+            "name": "Hearty Seafood Rice Balls",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/55/BotW_Extra_Heart_Icon.png/revision/latest?cb=20160616142936&format=original",
+            "ingredient1": "Hearty Bass",
+            "ingredient2": "Hylian Rice",
+            "description": "Restores all hearts and adds temporary hearts. Stuffed with aromatic seafood, the flavor can vary by ingredients but never disappoints.",
+            "optional": "Can replace Hearty Bass with Hearty Salmon or Hearty Blueshell Snail, or use a mix of two or more.",
+            "notes": "More fish/snails will increase the number of temporary hearts gained."
+        },
+        {
+            "id": "3",
+            "image": "https://www.zeldadungeon.net/wiki/images/6/6f/Apple_Pie_-_TotK_icon.png",
+            "name": "Apple Pie",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/2e/BotW_Heart_Icon.png/revision/latest?cb=20160616142421&format=original",
+            "ingredient1": "Apple",
+            "ingredient2": "Tabantha Wheat",
+            "ingredient3": "Cane Sugar",
+            "ingredient4": "Goat Butter",
+            "description": "The crispy, flaky pie crust and sweet apples are a match made in heaven.",
+            "optional": "Can add one extra of an existing ingredient.",
+            "notes": "A decent healing dish. Doesn't gain much by adding one extra ingredient."
+        },
+        {
+            "id": "4",
+            "image": "https://www.zeldadungeon.net/wiki/images/b/b5/Salt-grilled-greens.png",
+            "name": "Sneaky Salt-Grilled Greens",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/d/dd/BotW_Sneaky_Icon.png/revision/latest/scale-to-width-down/40?cb=20170315221754&format=original",
+            "ingredient1": "Blue Nightshade",
+            "ingredient2": "Rock Salt",
+            "description": "Provides a stealth buff. A health-boosting dish made with leafy greens and a touch of salt.",
+            "optional": "Silent Princess is another greens option. Can add 1-3 extra.",
+            "notes": "For a higher stealth buff, use multiple Silent Princesses."
+        },
+        {
+            "id": "5",
+            "image": "https://www.zeldadungeon.net/wiki/images/e/e1/Veggie-cream-soup.png",
+            "name": "Enduring Veggie Cream Soup",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/00/BotW_Extra_Stamina_Wheel_Icon.png/revision/latest/scale-to-width-down/40?cb=20170315222329&format=original",
+            "ingredient1": "Endura Carrot",
+            "ingredient2": "Fresh Milk",
+            "ingredient3": "Rock Salt",
+            "description": "Refills and overflows stamina wheel. This creamy soup showcases the sweetness of vegetables in a veritable taste explosion.",
+            "optional": "May add meat or fish as long as they do not have a different attribute from the Endura Carrot. May add 1-2 more Endura Carrots.",
+            "notes": "More Endura Carrots will increase the temporary stamina gained."
+        },
+        {
+            "id": "6",
+            "image": "https://www.zeldadungeon.net/wiki/images/c/c6/Honey-crepe.png",
+            "name": "Energizing Honey Crepe",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/37/BotW_Stamina_Restoration_Icon.png/revision/latest/scale-to-width-down/40?cb=20170315222522&format=original",
+            "ingredient1": "Courser Bee Honey",
+            "ingredient2": "Bird Egg",
+            "ingredient3": "Fresh Milk",
+            "ingredient4": "Tabantha Wheat",
+            "ingredient5": "Cane Sugar",
+            "description": "Instantly refills some of your Stamina Wheel. Honey has been drizzled over thin crepes to bring out their natural sweetness and flavor.",
+            "optional": "N/A",
+            "notes": "No substitutions available, all five ingredients are required to create this specific dish."
+        },
+        {
+            "id": "7",
+            "image": "https://www.zeldadungeon.net/wiki/images/0/0b/Pumpkin-pie.png",
+            "name": "Tough Pumpkin Pie",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/f0/BotW_Tough_Icon.png/revision/latest/scale-to-width-down/40?cb=20170315221330&format=original",
+            "ingredient1": "Fortified Pumpkin",
+            "ingredient2": "Tabantha Wheat",
+            "ingredient3": "Goat Butter",
+            "ingredient4": "Cane Sugar",
+            "description": "Provides a defense buff. The intense sweetness of fortified pumpkins makes this dessert popular among children.",
+            "optional": "May add another Fortified Pumpkin or other Tough ingredient. Adding a conflicting ingredient will create regular Pumpkin Pie.",
+            "notes": "This will always give a low defense buff unless adding an Armored Porgy as the optional ingredient."
+        },
+        {
+            "id": "8",
+            "image": "https://www.zeldadungeon.net/wiki/images/c/c9/Crab-omelet-with-rice.png",
+            "name": "Mighty Crab Omelot with Rice",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4e/BotW_Mighty_Icon.png/revision/latest/scale-to-width-down/40?cb=20170315221605&format=original",
+            "ingredient1": "Razorshell Crab",
+            "ingredient2": "Hylian Rice",
+            "ingredient3": "Bird Egg",
+            "ingredient4": "Rock Salt",
+            "description": "Provides an attack buff. The fluffy crab legs pair perfectly with the rice for a truly scrumptious dish.",
+            "optional": "May add another Razorshell Crab.",
+            "notes": "An additional Razorshell Crab will not increase the attack buff, and adding a different crab will remove the modifier entirely."
+        },
+        {
+            "id": "9",
+            "image": "https://www.zeldadungeon.net/wiki/images/5/5f/Cream-of-mushroom-soup.png",
+            "name": "Chilly Cream of Mushroom Soup",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/e6/BotW_Heat_Resistance_Icon.png/revision/latest/scale-to-width-down/40?cb=20170315203539&format=original",
+            "ingredient1": "Chillshroom",
+            "ingredient2": "Cool Safflina",
+            "ingredient3": "Fresh Milk",
+            "ingredient4": "Rock Salt",
+            "description": "Provides a heat resistance buff. This creamy mushroom-and-vegetable soup is thick and flavorful.",
+            "optional": "Can add an additional Chillshroom or Cool Safflina, or a Chillfin Trout.",
+            "notes": "Adding an extra Chillshroom or a Chillfin Trout will increase the heat resistance buff."
+        },
+        {
+            "id": "10",
+            "image": "https://www.zeldadungeon.net/wiki/images/c/c6/Saut%C3%A9ed_Peppers_-_TotK_icon.png",
+            "name": "Spicy Sautéed Peppers",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/eb/BotW_Cold_Resistance_Icon.png/revision/latest/scale-to-width-down/40?cb=20170315221942&format=original",
+            "ingredient1": "Spicy Pepper",
+            "description": "Provides a cold resistance buff. The spiciness of these sautéed peppers has been broken by the heat for a sweeter taste.",
+            "optional": "Can add an additional 1-4 Spicy Peppers.",
+            "notes": "Will always provide a low-level cold resistance buff under normal circumstances."
+        },
+        {
+            "id": "11",
+            "image": "https://www.zeldadungeon.net/wiki/images/d/d2/Prime_Poultry_Curry_-_TotK_icon.png",
+            "name": "Prime Poultry Curry",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/2e/BotW_Heart_Icon.png/revision/latest?cb=20160616142421&format=original",
+            "ingredient1": "Raw Bird Thigh",
+            "ingredient2": "Hylian Rice",
+            "ingredient3": "Goron Spice",
+            "description": "The secret to this curry's flavor is taking it off the heat while you add the spices.",
+            "optional": "May add 1-2 additional Raw Bird Thighs.",
+            "notes": "Adding more Raw Bird Thighs will increase the number of hearts restored."
+        },
+        {
+            "id": "12",
+            "image": "https://www.zeldadungeon.net/wiki/images/b/b9/Seafood-meuni%C3%A8re.png",
+            "name": "Electro Seafood Meunière",
+            "icon": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/57/BotW_Shock_Resistance_Icon.png/revision/latest?cb=20180323053009&format=original",
+            "ingredient1": "Voltfin Trout",
+            "ingredient2": "Tabantha Wheat",
+            "ingredient3": "Goat Butter",
+            "description": "Provides an electricity resistance. Rich butter flanks fresh seafood. The secret ingredient is lots and lots of love.",
+            "optional": "May add 1-2 additional Voltfin Trouts or Voltfruits.",
+            "notes": "Using 3 Voltfin Trouts will provide a high-level electricity buff that provides full immunity to electric attacks, but not lightning."
+        }
+    ]
+}
