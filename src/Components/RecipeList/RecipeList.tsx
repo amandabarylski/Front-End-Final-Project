@@ -9,7 +9,7 @@ const RecipeList = () => {
     const [recipes, setRecipes] = useState<Recipe[]>( [] )
     const [loading, setLoading] = useState(false)
 
-//I am keeping my db.json file in the project as well, even though I am using an online API.
+//NOTE - I am keeping my db.json file in the project as well, even though I am using an online API.
 //This provides me with a backup of my original data, as well as another option to run a server with.
 //Of course, I would need to change the baseURL, but since I am using a variable to contain it
 //I would only have to alter the code in one place.
@@ -34,6 +34,8 @@ const RecipeList = () => {
         }
         fetchRecipes()
     }, [])
+
+    //TODO - Still need to style card group. Also need to add filter component, and want to move add recipe button here too. Perhaps put both in a sidebar?
     return (
         <>
         { loading ? (

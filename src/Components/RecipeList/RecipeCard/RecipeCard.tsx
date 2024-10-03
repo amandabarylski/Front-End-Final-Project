@@ -1,4 +1,4 @@
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap"
+import { Button, Card, ListGroup, ListGroupItem } from "react-bootstrap"
 import { Recipe } from "../../../types"
 
 
@@ -15,7 +15,7 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
     return (
         <Card>
             <Card.Img src={recipe.image} />
-            <Card.Title>{recipe.name}</Card.Title>
+            <Card.Title>{recipe.name}<img src={recipe.icon} /></Card.Title>
             <ListGroup>
                 <ListGroupItem>{recipe.ingredient1}</ListGroupItem>
                 {recipe.ingredient2 ? <ListGroupItem>{recipe.ingredient2}</ListGroupItem> : null }
@@ -23,6 +23,9 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
                 {recipe.ingredient4 ? <ListGroupItem>{recipe.ingredient4}</ListGroupItem> : null }
                 {recipe.ingredient5 ? <ListGroupItem>{recipe.ingredient5}</ListGroupItem> : null }
             </ListGroup>
+            <Card.Footer>
+                <Button variant="info" href={"/recipe-book/recipe/" + recipe.id}>Details</Button>
+            </Card.Footer>
         </Card>
     )
 }

@@ -33,12 +33,12 @@ const router = createBrowserRouter([
                 errorElement: <ErrorPage />,
                 children: [
                     {
-                        path: "recipe/:id",
+                        path: "recipe/:recipeId",
                         element: <RecipeView />,
                         errorElement: <ErrorPage />,
                     },
                     {
-                        path: "recipe/:id/edit",
+                        path: "recipe/:recipeId/edit",
                         element: <EditRecipe />,
                         errorElement: <ErrorPage />,
                     },
