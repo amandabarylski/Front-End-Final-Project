@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react"
-import { Button, Form } from "react-bootstrap"
+import { Button, Form, Row } from "react-bootstrap"
 import { chilly, electro, enduring, energizing, hasty, healing, hearty, mighty, sneaky, spicy, tough } from "../../icons"
 import { useNavigate } from "react-router-dom"
 
@@ -59,19 +59,20 @@ const AddRecipe = () => {
 //REVIEW - still needs styling, will use this as a base for the edit form once that's done.
 //I also want to add a modal that pops up to show success or failure.
     return (
-        <Form onSubmit={handleSubmit}>
+        <Form className="mx-2" onSubmit={handleSubmit}>
 
-            <Form.Group>
+            <Row className="mb-3">
+            <Form.Group controlId="recipeName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control type="text" placeholder="name" name="name" onChange={handleChange} required></Form.Control>
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group controlId="recipeImageURL">
                 <Form.Label>Image URL</Form.Label>
                 <Form.Control type="text" placeholder="image URL" name="image" onChange={handleChange} required></Form.Control>
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group controlId="recipeEffect">
                 <Form.Label>Effect</Form.Label>
                 <Form.Select name="icon" onChange={handleChange}>
                     <option value={healing}><img src={healing} /> None</option>
@@ -87,8 +88,9 @@ const AddRecipe = () => {
                     <option value={electro}><img src={electro} /> Electro</option>
                 </Form.Select>
             </Form.Group>
+            </Row>
 
-            <Form.Group>
+            <Form.Group controlId="requiredIngredients">
                 <Form.Label>Required Ingredients (enter up to 5)</Form.Label>
                 <Form.Control type="text" name="ingredient1" onChange={handleChange} required></Form.Control>
                 <Form.Control type="text" name="ingredient2" onChange={handleChange}></Form.Control>
@@ -97,12 +99,12 @@ const AddRecipe = () => {
                 <Form.Control type="text" name="ingredient5" onChange={handleChange}></Form.Control>
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group controlId="optionalIngredients">
                 <Form.Label>Optional Ingredients</Form.Label>
                 <Form.Control as="textarea" rows={3} name="optional" onChange={handleChange} required />
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group controlId="recipeNotes">
                 <Form.Label>Additional Notes:</Form.Label>
                 <Form.Control as="textarea" rows={3} name="notes" onChange={handleChange} />
             </Form.Group>

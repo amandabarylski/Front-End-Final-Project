@@ -1,4 +1,4 @@
-import { Button, Card, ListGroup, ListGroupItem } from "react-bootstrap"
+import { Button, Card, Col, ListGroup, ListGroupItem } from "react-bootstrap"
 import { Recipe } from "../../../types"
 
 
@@ -13,9 +13,10 @@ type RecipeCardProps = {
 //I was able to add a ternary to them so that they only had text if the property existed, which made it work.
 const RecipeCard = ({ recipe }: RecipeCardProps) => {
     return (
-        <Card>
-            <Card.Img src={recipe.image} />
-            <Card.Title>{recipe.name}<img src={recipe.icon} /></Card.Title>
+        <Col>
+        <Card className="p-1">
+            <Card.Img src={recipe.image} className="mb-1" />
+            <Card.Title>{recipe.name}</Card.Title>
             <ListGroup>
                 <ListGroupItem>{recipe.ingredient1}</ListGroupItem>
                 {recipe.ingredient2 ? <ListGroupItem>{recipe.ingredient2}</ListGroupItem> : null }
@@ -23,10 +24,11 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
                 {recipe.ingredient4 ? <ListGroupItem>{recipe.ingredient4}</ListGroupItem> : null }
                 {recipe.ingredient5 ? <ListGroupItem>{recipe.ingredient5}</ListGroupItem> : null }
             </ListGroup>
-            <Card.Footer>
-                <Button variant="info" href={"/recipe-book/recipe/" + recipe.id}>Details</Button>
+            <Card.Footer className="text-center">
+                <Button variant="info" href={`recipe/${recipe.id}`}>Details</Button>
             </Card.Footer>
         </Card>
+        </Col>
     )
 }
 

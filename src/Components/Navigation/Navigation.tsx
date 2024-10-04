@@ -5,12 +5,12 @@ import { Container, Nav, Navbar } from "react-bootstrap"
 
 const Navigation = () => {
     return (
-        <Navbar expand="lg" className="bg-body-secondary">
+        <Navbar bg="info" data-bs-theme="info">
             <Container>
                 <Navbar.Brand href="/">Home</Navbar.Brand>
                 <Nav className="ml-auto">
                     <Nav.Link href="/recipe-book">Recipes</Nav.Link>
-                    <Nav.Link href="/recipe/new">Add</Nav.Link>
+                    <Nav.Link href="/elixer-info">Elixers</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

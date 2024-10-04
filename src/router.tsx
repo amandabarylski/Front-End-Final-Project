@@ -6,6 +6,7 @@ import RecipeView from "./Components/RecipeList/RecipeCard/RecipeView/RecipeView
 import AddRecipe from "./Components/AddRecipe/AddRecipe";
 import EditRecipe from "./Components/RecipeList/RecipeCard/RecipeView/EditRecipe";
 import App from "./App";
+import ElixerInfo from "./Components/ElixerInfo/ElixerInfo";
 
 //I chose to have my router in a separate file and export it into my main.tsx file.
 //This keeps the growing list more contained and keeps it from cluttering up another file.
@@ -31,23 +32,26 @@ const router = createBrowserRouter([
                 path: "/recipe-book",
                 element: <RecipeList />,
                 errorElement: <ErrorPage />,
-                children: [
-                    {
-                        path: "recipe/:recipeId",
-                        element: <RecipeView />,
-                        errorElement: <ErrorPage />,
-                    },
-                    {
-                        path: "recipe/:recipeId/edit",
-                        element: <EditRecipe />,
-                        errorElement: <ErrorPage />,
-                    },
-                    {
-                        path: "recipe/new",
-                        element: <AddRecipe />,
-                        errorElement: <ErrorPage />,
-                    },
-                ]
+            },
+            {
+                path: "recipe/:recipeId",
+                element: <RecipeView />,
+                errorElement: <ErrorPage />,
+            },
+            {
+                path: "recipe/:recipeId/edit",
+                element: <EditRecipe />,
+                errorElement: <ErrorPage />,
+            },
+            {
+                path: "recipe/new",
+                element: <AddRecipe />,
+                errorElement: <ErrorPage />,
+            },
+            {
+                path: "/elixer-info",
+                element: <ElixerInfo />,
+                errorElement: <ErrorPage />,
             }
         ]
     },
