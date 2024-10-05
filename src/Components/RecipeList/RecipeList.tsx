@@ -13,7 +13,10 @@ const RecipeList = () => {
     //This provides me with a backup of my original data, as well as another option to run a server with.
     //Of course, I would need to change the baseURL, but since I am using a variable to contain it
     //I would only have to alter the code in one place.
+    //Eventually to make testing with both easier I wrote down both and commented out the one I wasn't using.
+    //Unfortunately it takes altering the id name between id and dataId as well.
     const baseURL = "http://localhost:3000/recipes"
+    // const baseURL = "https://backend.michaelvarnell.com:5100/api/recipes"
 
     //I started with a basic useEffect and fetch request when testing the API,
     //and then went back later to add loading and error functionality.
@@ -48,7 +51,9 @@ const RecipeList = () => {
                     <Row xs={2} md={3} lg={4} className="g-3">
                         <Card>
                             <CardBody className="d-flex">
-                                <Button variant="outline-info" size="lg" className="mx-auto my-auto">Add New Recipe</Button>
+                                <Button variant="outline-info" size="lg" 
+                                className="mx-auto my-auto"
+                                href="/recipe/new">Add New Recipe</Button>
                             </CardBody>
                         </Card>
                         {recipes.map(recipe => (

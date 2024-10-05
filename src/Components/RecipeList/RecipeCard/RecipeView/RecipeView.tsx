@@ -1,7 +1,8 @@
 import { FC, useEffect, useState } from "react"
-import { Container, ListGroup, ListGroupItem, Spinner } from "react-bootstrap"
+import { Container, ListGroup, ListGroupItem, Spinner, Stack, Button } from "react-bootstrap"
 import { useParams } from "react-router-dom"
 import { Recipe } from "../../../../types"
+import DeleteModal from "./DeleteModal"
 
 
 const RecipeView: FC = () => {
@@ -12,6 +13,7 @@ const RecipeView: FC = () => {
         id: "",
         image: "",
         name: "",
+        effect: "",
         ingredient1: "",
         ingredient2: "",
         ingredient3: "",
@@ -27,8 +29,11 @@ const RecipeView: FC = () => {
     //since this component isn't directly tied to the RecipeList component, despite being a child of it.
     //Having the variable needed in multiple components kind of defeats the purpose of it.
     const baseURL = "http://localhost:3000/recipes"
+    // const baseURL = "https://backend.michaelvarnell.com:5100/api/recipes"
 
     //NOTE - Copied the loading state as well as the error try/catch from the RecipeList page.
+    //Using the online API here returns the whole array. I'll look for another free one to test as well,
+    //but json-server is working fine so I'm not sure what the problem is.
     useEffect(() => {
         const fetchRecipe = async () => {
             setLoading(true)
@@ -39,9 +44,11 @@ const RecipeView: FC = () => {
                 }
                 const data = await response.json()
                 setRecipe(data)
-                setLoading(false)
+                console.log(data)
             } catch (error) {
                 console.error('Error:', error)
+            } finally {
+                setLoading(false)
             }
         }
         fetchRecipe()
@@ -74,7 +81,11 @@ const RecipeView: FC = () => {
                     {recipe.notes ? (<>
                         <h4>Notes:</h4>
                         <p>{recipe.notes}</p>
-                        </>) : null}
+                    </>) : null}
+                    <Stack direction="horizontal" gap={5} className="w-75 mx-auto">
+                        <Button variant="success" className="mx-auto" href={`/recipe/${recipe.id}/edit`}>Edit</Button>
+                        <DeleteModal id={recipe.id} />
+                    </Stack>
                 </Container>
             )}
         </>

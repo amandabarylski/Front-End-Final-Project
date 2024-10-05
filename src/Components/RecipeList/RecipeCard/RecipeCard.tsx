@@ -25,7 +25,7 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
                 {recipe.ingredient5 ? <ListGroupItem>{recipe.ingredient5}</ListGroupItem> : null }
             </ListGroup>
             <Card.Footer className="text-center">
-                <Button variant="info" href={`recipe/${recipe.id}`}>Details</Button>
+                <Button variant="info" href={`/recipe/${recipe.id}`}>Details</Button>
             </Card.Footer>
         </Card>
         </Col>

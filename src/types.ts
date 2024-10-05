@@ -9,6 +9,7 @@ export type Recipe = {
     id: number | string,
     image: string,
     name: string,
+    effect: string,
     ingredient1: string,
     ingredient2?: string,
     ingredient3?: string,
