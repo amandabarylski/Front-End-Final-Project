@@ -7,7 +7,7 @@ import DeleteModal from "./DeleteModal"
 
 const RecipeView: FC = () => {
 
-    const { recipeId } = useParams()
+    const { recipeId } = useParams<string>()
 
     const [recipe, setRecipe] = useState<Recipe>({
         id: "",
@@ -28,12 +28,16 @@ const RecipeView: FC = () => {
     //REVIEW - Copied and pasted the baseURL here, not sure how to handle passing it down instead
     //since this component isn't directly tied to the RecipeList component, despite being a child of it.
     //Having the variable needed in multiple components kind of defeats the purpose of it.
-    const baseURL = "http://localhost:3000/recipes"
+
+    // const baseURL = "http://localhost:3000/recipes"
     // const baseURL = "https://backend.michaelvarnell.com:5100/api/recipes"
+    // const baseURL = "https://my-json-server.typicode.com/amandabarylski/Recipe-Book-API/recipes"
+    const baseURL = "https://6701c8feb52042b542d88e77.mockapi.io/api/project/recipes"
 
     //NOTE - Copied the loading state as well as the error try/catch from the RecipeList page.
     //Using the online API here returns the whole array. I'll look for another free one to test as well,
     //but json-server is working fine so I'm not sure what the problem is.
+    //As My JSON Server is working, it has something to do with the id being called data_id instead.
     useEffect(() => {
         const fetchRecipe = async () => {
             setLoading(true)

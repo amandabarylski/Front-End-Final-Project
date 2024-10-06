@@ -13,7 +13,8 @@ const DeleteModal = ({ id }: DeleteModalProps) => {
 //However, I imported useNavigate in order to send the user back to the recipe book page after a successful delete.
     const navigate = useNavigate()
 
-    const baseURL = "http://localhost:3000/recipes"
+    // const baseURL = "http://localhost:3000/recipes"
+    const baseURL = "https://6701c8feb52042b542d88e77.mockapi.io/api/project/recipes"
 
     const [show, setShow] = useState(false)
 

@@ -7,7 +7,7 @@ import { toast } from "react-toastify"
 
 const EditRecipe = () => {
 
-    const { recipeId } = useParams()
+    const { recipeId } = useParams<string>()
 
     const [updatedRecipe, setUpdatedRecipe] = useState<Recipe>({
         id: "",
@@ -26,8 +26,10 @@ const EditRecipe = () => {
     const [isPutting, setIsPutting] = useState(false)
     const [loading, setLoading] = useState(false)
 
+    // const baseURL = "http://localhost:3000/recipes"
     // const baseURL = "https://backend.michaelvarnell.com:5100/api/recipes"
-    const baseURL = "http://localhost:3000/recipes"
+    // const baseURL = "https://my-json-server.typicode.com/amandabarylski/Recipe-Book-API/recipes"
+    const baseURL = "https://6701c8feb52042b542d88e77.mockapi.io/api/project/recipes"
 
     const navigate = useNavigate()
 
@@ -111,17 +113,17 @@ const EditRecipe = () => {
                 <Form.Group controlId="recipeEffect" className="col-md-4">
                     <Form.Label>Effect</Form.Label>
                     <Form.Select name="effect" onChange={handleChange} defaultValue={updatedRecipe.effect}>
-                        <option value={"healing"}>None</option>
-                        <option value={"hearty"}>Hearty</option>
-                        <option value={"energizing"}>Energizing</option>
-                        <option value={"enduring"}>Enduring</option>
-                        <option value={"mighty"}>Mighty</option>
-                        <option value={"tough"}>Tough</option>
-                        <option value={"hasty"}>Hasty</option>
-                        <option value={"sneaky"}>Sneaky</option>
-                        <option value={"spicy"}>Spicy</option>
-                        <option value={"chilly"}>Chilly</option>
-                        <option value={"electro"}>Electro</option>
+                        <option value={"None"}>None</option>
+                        <option value={"Hearty"}>Hearty</option>
+                        <option value={"Energizing"}>Energizing</option>
+                        <option value={"Enduring"}>Enduring</option>
+                        <option value={"Mighty"}>Mighty</option>
+                        <option value={"Tough"}>Tough</option>
+                        <option value={"Hasty"}>Hasty</option>
+                        <option value={"Sneaky"}>Sneaky</option>
+                        <option value={"Spicy"}>Spicy</option>
+                        <option value={"Chilly"}>Chilly</option>
+                        <option value={"Electro"}>Electro</option>
                     </Form.Select>
                 </Form.Group>
             </Row>
